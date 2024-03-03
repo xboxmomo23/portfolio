@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+  background-color: transparent !important;
+  background-color: black;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center !important;
+  height: 60px;
+}
+
+nav {
+  width: 40%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: orange;
+}
+
+.span2 {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+}

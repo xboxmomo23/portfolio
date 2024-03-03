@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Accueil</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- <link rel="stylesheet" href="assets/css/styles.css"> -->
+
+    <link rel="stylesheet" href="assets/css/veille.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+
+  </head>
+  <body>
+    <header class="container fixed-top">
+      <h1>portfolio <span class="span2">Nadir</span></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="entreprise.html">Entreprise</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="veille.html">Veille</a></li>
+          <li><a href="bilan.html">Bilan</a></li>
+          <!-- <li><a href="E5.html">E5</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+
+
+
+
+
+
+
+
+    <section class="veille py-5">
+      <div id="veille">
+          <div class="row text-center py-5">
+              <h2>Mes Outils de veilles</h2>
+          </div>
+          <div class="row py-3">
+              <div class="col-4"></div>
+
+              <div class="col-4 py-3">
+                  <p>La finalité de cette veille est d'exposer les récentes stratégies de cyberattaques adoptées par les pirates informatiques, tout en mettant en évidence les initiatives entreprises pour renforcer la sécurité et la robustesse des systèmes informatiques. 
+                      <br> Je réalise cette veille à partir des flux récoltés sur Feedly, je suis abonné à "the hacker news" et "le magIT" et en m'appuyant également sur les alertes et les bulletins de sécurité proposés par le site Cert-FR.
+                  </p>
+              </div>
+
+              <div class="col-4 py-3"></div>
+              <div class="row justify-content-center">
+                  <div class="col-3">
+                      <img class="secund" src="assets/img/feedly.png" alt="" style="width: 100%; border: 2px groove black;">
+                  </div>
+                  <div class="col-3">
+                      <img class="secund" src="assets/img/twitter.jpg" alt="" style="width: 100%; border: 2px groove black;">
+                  </div>
+              </div>
+              <!-- <div class="col-2">
+                  <img src="assets/img/veille.jpg" alt="" style="width: 60%;">
+              </div> --> 
+          </div>
+  
+  </section>
+
+  <section id="article">
+      <div class="text-center py-3">
+          <h2>ARTICLES</h2>
+          <p class="secund"></p>
+      </div>
+
+
+    <div class="filters row">
+      <label for="sortBy">Trier par :</label>
+      <select id="sortBy" onchange="sortArticles()">
+          <option value="date">Date</option>
+          <option value="note">Note</option>
+      </select>
+    </div>
+
+    <section id="articleList" class="articles py-5">
+      <!-- <article class="date" data-date="2023-11-01" data-note="3">
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/linux2.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Multiples Vulnérabilitées dans le noyau Linux de RedHat</h2>
+            <p class="resumer">
+              De multiples vulnérabilités ont été découvertes dans le noyau Linux de RedHat. Elles permettent à un attaquant de provoquer une exécution de code arbitraire à distance, une atteinte à la confidentialité des données et un déni de service à distance.
+            </p>
+            <span>le 01/12/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="assets/veille pdf/CERTFR-2023-NoyauLinuxRedHat.pdf" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <article class="date" data-date="2023-12-01" data-note="4">
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/ubuntu.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Multiples vulnérabilités dans le noyau Linux d’Ubuntu</h2>
+            <p class="resumer">
+              De multiples vulnérabilités ont été découvertes dans le noyau Linux d'Ubuntu. Certaines d'entre elles permettent à un attaquant de provoquer une atteinte à la confidentialité des données, un déni de service et une exécution de code arbitraire à distance.
+            </p>
+            <div class="source">
+              <span class="date">le 01/12/23</span>
+              <span>Source : <i class="bi bi-twitter"></i></span>
+            </div>
+            
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="assets/veille pdf/CERTFR-2023-Ubuntu.pdf" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+
+      <article class="date" data-date="2023-11-24" data-note="5">
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/apache.png" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Vulnérabilité dans Apache Tomcat</h2>
+            <p>
+              Une vulnérabilité a été découverte dans Apache Tomcat. Elle permet à un attaquant de provoquer un contournement de la politique de sécurité.
+            </p>
+            <span class="date">le 29/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://t.co/uZFGdmKaVh" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/suse.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Multiples vulnérabilités dans le noyau Linux de SUSE</h2>
+            <p>
+              De multiples vulnérabilités ont été découvertes dans le noyau Linux de SUSE. Certaines d'entre elles permettent à un attaquant de provoquer une élévation de privilèges, une atteinte à la confidentialité des données, un problème de sécurité non spécifié par l'éditeur, une exécution de code arbitraire et une atteinte à l'intégrité des données.
+            </p>
+            <span class="date">le 15/12/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://t.co/hCyOotI8iq" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article> -->
+
+      
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/vulnerabiliteIA.webp" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>les risques de sécurité et de confidentialité liés au système d'IA</h2>
+            <p>
+              Le NIST met en garde contre les risques de sécurité et de confidentialité liés au déploiement rapide du système d'IA
+            </p>
+            <span class="date">le 24/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://thehackernews.com/2024/01/nist-warns-of-security-and-privacy.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/orange.jpg" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Orange Espagne : du piratage d’un compte administrateur à une vaste perte de connexion à Internet</h2>
+            <p>
+              Un pirate a pu accéder à un compte administrateur qui lui a permis de modifier les routes annoncées pour tout un éventail d’adresses IP utilisées par Orange Espagne. De quoi les déconnecter d’Internet. Tout cela à cause d’un infostealer.
+            </p>
+            <span class="date">le 24/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://www.lemagit.fr/actualites/366565192/Orange-Espagne-du-piratage-dun-compte-administrateur-a-une-vaste-perte-de-connexion-a-Internet" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/cheval_de_troie.webp" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Des pirates informatiques syriens distribuent aux cybercriminels un Silver RAT furtif basé sur C#</h2>
+            <p>
+              Les détections dans la nature de Silver RAT v1.0 ont été observées pour la première fois en novembre 2023, bien que les projets de l'acteur malveillant visant à diffuser le cheval de Troie aient été officialisés pour la première fois un an auparavant. Il a été craqué et divulgué sur Telegram vers octobre 2023.
+            </p>
+            <span class="date">le 24/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://thehackernews.com/2024/01/syrian-hackers-distributing-stealthy-c.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="assets/img/coreeNord.webp" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Cyber-braquage en Corée du Nord </h2>
+            <p>
+              Les acteurs menaçants affiliés à la République populaire démocratique de Corée (également connue sous le nom de Corée du Nord) ont pillé au moins 600 millions de dollars en crypto-monnaie en 2023.
+              La RPDC « était responsable de près d'un tiers de tous les fonds volés lors d'attaques cryptographiques l'année dernière, malgré un 30 % de réduction par rapport aux 850 millions de dollars transportés en 2022
+            </p>
+            <span class="date">le 24/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="https://thehackernews.com/2024/01/north-koreas-cyber-heist-dprk-hackers.html" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+
+      <article>
+        <div class="article-wrapper">
+          <figure>
+            <img src="https://picsum.photos/id/1011/800/450" alt="" />
+          </figure>
+          <div class="article-body">
+            <h2>Un groupe de hackers pro-iraniens cible l’Albanie avec un logiciel malveillant No-Justice Wiper</h2>
+            <p>
+              La récente vague de cyberattaques ciblantalbanais organisations impliquées dans l'utilisation d'unessuie-glace appelé Pas de justice.
+              Les conclusions proviennent de la société de cybersécurité ClearSky, qui a déclaré que le malware basé sur Windows « fait planter le système d'exploitation de manière à ce qu'il ne puisse pas être redémarré ».
+            </p>
+            <span class="date">le 24/11/23</span>
+            <div class="note">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+            </div>
+            <a href="#" class="read-more">
+              Read more <span class="sr-only">about this is some title</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+  </section>
+
+
+  </body>
+</html>

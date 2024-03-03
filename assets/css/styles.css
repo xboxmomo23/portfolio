@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  /* width: 100vw; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: 100%; */
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  /* background: black; */
+  /* margin: 0; */
+}
+/* body,
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+} */
+
+section {
+  height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* BANNIERE - ACCUEIL */
+
+.banniere {
+  background: url(../img/nasa-Q1p7bh3SHj8-unsplash.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 90vh; */
+}
+
+/* A PROPOS */
+
+.a-propos {
+  background-color: #1b2838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.presentation p {
+  line-height: 45px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.separation {
+  background-color: orange;
+}
+
+.a-propos-image {
+  width: 30%;
+}
+
+.a-propos-image img {
+  filter: drop-shadow(0.1rem 0.3rem orange);
+  border-radius: 10%;
+}
+
+/* section competence */
+
+.competences {
+  /* background: rgba(95, 152, 199, 0.783); */
+  background-color: #d5d4d5;
+}
+
+.contenu {
+  position: relative;
+  width: 310px;
+  margin: 100px auto 0 auto;
+  perspective: 2000px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 30s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 280px;
+  height: 200px;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+
+.carousel__face:nth-child(1) {
+  background-image: url("../img/glpi.png");
+  transform: rotateY(0deg) translateZ(430px);
+}
+.carousel__face:nth-child(2) {
+  background-image: url("../img/windows.png");
+  transform: rotateY(40deg) translateZ(430px);
+}
+.carousel__face:nth-child(3) {
+  background-image: url("../img/Veeam.jpg");
+  transform: rotateY(80deg) translateZ(430px);
+}
+.carousel__face:nth-child(4) {
+  background-image: url("../img/VMwareWS.png");
+  transform: rotateY(120deg) translateZ(430px);
+}
+.carousel__face:nth-child(5) {
+  background-image: url("../img/az900.jpg");
+  transform: rotateY(160deg) translateZ(430px);
+}
+.carousel__face:nth-child(6) {
+  background-image: url("../img/linux.webp");
+  transform: rotateY(200deg) translateZ(430px);
+}
+.carousel__face:nth-child(7) {
+  background-image: url("../img/packet tracer.png");
+  transform: rotateY(240deg) translateZ(430px);
+}
+.carousel__face:nth-child(8) {
+  background-image: url("../img/rds_classique.png");
+  transform: rotateY(280deg) translateZ(430px);
+}
+.carousel__face:nth-child(9) {
+  background-image: url("../img/truenas.png");
+  transform: rotateY(320deg) translateZ(430px);
+}
+.carousel__face:nth-child(10) {
+  background-image: url("../img/pfsense.png");
+  transform: rotateY(320deg) translateZ(430px);
+}
+.carousel__face:nth-child(11) {
+  background-image: url("../img/ActiveDirectory.png");
+  transform: rotateY(320deg) translateZ(430px);
+}
+.carousel__face:nth-child(12) {
+  background-image: url("../img/wds.jpg");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+/* Certifications */
+
+.certifications {
+  /* border: 5px solid green; */
+  font: 1em/1.5 "Open Sans", sans-serif;
+  background-color: #171a21;
+
+  /* margin: 0; */
+}
+.certifications .content {
+  /* border: 2px solid blue; */
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cube-container {
+  /* border: 2px solid red; */
+  max-width: 200px;
+  height: 200px;
+
+  text-align: center;
+  /* margin: 0 auto; */
+}
+.back a {
+  text-decoration: none;
+}
+h3 {
+  font-size: 1.3em;
+  line-height: 1.25em;
+  margin-top: 0.85em;
+  margin-bottom: 0.5em;
+}
+p {
+  font-size: 0.875em;
+  line-height: 1.4;
+  margin: 0 0 1.5em;
+}
+
+.button {
+  font-size: 0.8em;
+  font-weight: 700;
+  /* text-decoration: none; */
+  /* line-height: 1.15; */
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.95em 0;
+  width: 100%;
+  border-radius: 0.5em;
+  background: rgba(74, 137, 202, 0.8);
+  margin: auto;
+}
+/* ===============================
+  Button Transitions
+==================================*/
+.button {
+  transition: background 0.3s;
+}
+.button:hover {
+  background: rgba(74, 137, 202, 1);
+}
+
+.photo-desc {
+  font-size: 0.85em;
+  color: #fff;
+  padding: 1.1em 1em 0;
+  background: #345d88;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ================================= 
+  Photo 3D Transforms & Transitions
+==================================== */
+
+.cube-container {
+  box-shadow: 0 18px 40px 5px rgba(0, 0, 0, 0.4);
+  perspective: 800px;
+}
+.photo-cube {
+  transition: transform 2s ease-in-out;
+  width: 220px;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+
+.photo-cube:hover {
+  transform: rotateY(-270deg);
+}
+
+.front,
+.back,
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
+.front {
+  transform: translate3d(0, 0, 110px);
+}
+
+.back {
+  transform: translateZ(-110px) rotateY(270deg);
+  transform-origin: center left;
+}
+
+.left {
+  transform: rotateY(-270deg) translate3d(110px, 0, 0);
+  transform-origin: top right;
+}
+
+.right {
+  transform: translateZ(-110px) rotateY(180deg);
+}
+
+/* REALISATIONS */
+
+
+#realisation {
+  /* background-image: url(../img/fondBleu.jpg); */
+  background-color: #2c3e50;
+  color: white;
+  /* border: 2px solid red; */
+  height: 230vh;
+  /* height: auto; */
+}
+
+.carteRealisation {
+  border-radius: 24px;
+  /* filter: drop-shadow(0 0 0.9rem #333); */
+  /* filter: drop-shadow(4px 4px 4px #B0C4DE);  */
+  filter: drop-shadow(4px 4px 4px black);
+
+  /* background-color: #3498db; */
+  background-color: #7bafc9;
+
+  /* box-shadow: 0 0 5px ; */
+  border: 1px solid transparent;
+  cursor: pointer;
+  /* background-image: url(../img/fondNoirEtoiles.jpg); */
+  color: white;
+}
+
+.filters {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.aos-animate {
+  pointer-events: auto;
+}
+
+.carteRealisation img {
+  height: 290px;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* margin-left: 40px; */
+  margin-top: 20px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  box-shadow: 0 0 5px black;
+  border-radius: 24px;
+}

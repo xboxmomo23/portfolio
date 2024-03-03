@@ -1,0 +1,75 @@
+
+body{
+    background-color: #fff;
+}
+
+
+:root
+{
+    --blanc: #fff;
+    --gris-clair: #ddd;
+    --gris-transparant: rgba(0, 0, 0, 0.212);
+    --gris: rgb(155, 155, 155);
+    --gris-fonce: rgb(94, 94, 94);
+    --bleu-clair: #c1d2d9;
+    --bleu-fonce: #7bafc9;
+    --orange: orange;
+}
+
+
+.page {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.carteRealisation{
+    filter: drop-shadow(0 0 0.8rem #3498db);
+}
+.carteRealisation img {
+  aspect-ratio: 1 / 1;
+  border: 2px groove black; 
+  border-radius: 24px; 
+  width: 80%;
+}
+
+.secund {
+    margin-top: 10px;
+    font-size: 1.3em; 
+  }
+  .secund::before,
+  .secund::after {
+    border: 2px solid white;
+    display: inline-block;
+    content: "";
+    width: 100px;
+    transform: translate(0, -6px);
+    filter: drop-shadow(0 0 0.5rem #3498db);
+  }
+
+  .bouton{
+    filter: drop-shadow(0 0 0.2rem #3498db);
+    text-decoration: none;
+    background-color: rgb(173, 93, 173);
+  }
+
+  .bouton a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .pln{
+    filter: drop-shadow(0 0 0.4rem #3498db);
+    border: 2px groove black; 
+    border-radius: 24px; 
+  }
+
+  .DOCUMENT{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .document {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
